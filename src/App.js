@@ -55,8 +55,9 @@ function App() {
       setSharedTreeMap(sharedMap);
       return sharedMap;
     }
+    let unregister;
     init().then((sharedMap) => {
-      sharedMap.getBinder().bindOnBatch(() => {
+      unregister = sharedMap.getBinder().bindOnBatch(() => {
         setDiceValues((oldState) => {
           const newState = sharedMap.asMap();
           if (isMemorySupported) {
@@ -68,6 +69,9 @@ function App() {
         });
       });
     });
+    return () => {
+      unregister && unregister();
+    };
   }, []);
 
   useEffect(() => {
