@@ -32,4 +32,8 @@ npm run build
 npm start
 ```
 
+## Output
 
+> Note: The dynamic memory plot is present only in browsers supporting `performance.memory.usedJSHeapSize`. At the time of writing, Chrome and Chromium-based browsers support this feature.
+
+![](./img/shared-tree-map-hello.gif)
