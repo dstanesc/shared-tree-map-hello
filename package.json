@@ -1,11 +1,11 @@
 {
   "name": "shared-tree-map-hello",
   "description": "shared-tree-map hello world",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "dependencies": {
     "@dstanesc/fake-metrology-data": "^0.0.3",
-    "@dstanesc/shared-tree-map": "^0.0.3",
+    "@dstanesc/shared-tree-map": "^0.0.4",
     "@fluidframework/common-utils": "^0.32.2",
     "lodash": "^4.17.21",
     "plotly.js-dist-min": "^2.23.2",
