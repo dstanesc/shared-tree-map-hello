@@ -57,7 +57,7 @@ function App() {
     }
     let unregister;
     init().then((sharedMap) => {
-      unregister = sharedMap.getBinder().bindOnBatch(() => {
+      unregister = sharedMap.getInvalidationBinder().bindOnInvalid(() => {
         setDiceValues((oldState) => {
           const newState = sharedMap.asMap();
           if (isMemorySupported) {
