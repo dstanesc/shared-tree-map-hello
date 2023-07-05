@@ -1,6 +1,6 @@
 # `shared-tree-map` hello world
 
-Demonstrates the use of the `shared-tree-map` package.
+Demonstrates the use of the `shared-tree-map` library.
 
 ## Fluid Relay Env Setup
 
@@ -31,12 +31,6 @@ npm install
 npm run build
 npm start
 ```
-
-## Output
-
-> Note: The dynamic memory plot is present only in browsers supporting `performance.memory.usedJSHeapSize`. At the time of writing, Chrome and Chromium-based browsers support this feature.
-
-![](./img/shared-tree-map-hello.gif)
 
 ## Licenses
 
