@@ -10,7 +10,7 @@ export function useSharedMap() {
     const initializeMap = async () => {
       let mapId = window.location.hash.substring(1) || undefined;
       console.log("mapId", mapId);
-      const map = await initMap(mapId);
+      const map = await initMap(mapId, undefined);
       if (mapId === undefined) {
         mapId = map.mapId();
         window.location.hash = mapId;
@@ -66,7 +66,7 @@ export function useSharedMap() {
   );
 
   const randomString = () => {
-    const randomNumber = Math.floor(Math.random() * 1024) + 1;
+    const randomNumber = Math.floor(Math.random() * 998) + 1;
     return randomNumber.toString();
   };
 
