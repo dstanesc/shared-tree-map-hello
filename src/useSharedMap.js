@@ -10,7 +10,7 @@ export function useSharedMap() {
     const initializeMap = async () => {
       let mapId = window.location.hash.substring(1) || undefined;
       console.log("mapId", mapId);
-      const map = await initMap(mapId, undefined);
+      const map = await initMap(mapId, process.env.FLUID_MODE);
       if (mapId === undefined) {
         mapId = map.mapId();
         window.location.hash = mapId;
